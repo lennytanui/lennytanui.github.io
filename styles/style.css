@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  padding: 2em;
+  z-index: 2;
+}
+
+header div.menu {
+  position: relative;
+  left: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+header div.menu div.bars div {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 0.9em;
+  width: 4.2em;
+  border-radius: 0.5em;
+  background-color: #F4FFF8;
+}
+
+header div.menu div.bars div:nth-child(2) {
+  margin: 0.4em 0px;
+}
+
+header div.menu div.close div {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header div.menu div.close div:nth-child(1) {
+  -webkit-transform: translateY(140%);
+          transform: translateY(140%);
+  opacity: 0;
+}
+
+header div.menu div.close div:nth-child(2) {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+header div.menu div.close div:nth-child(3) {
+  -webkit-transform: translateY(-140%) rotate(-225deg);
+          transform: translateY(-140%) rotate(-225deg);
+}
+
+header div.menu div.overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+
+header nav {
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: -1;
+  width: 90%;
+  height: 140vh;
+  top: 0;
+  right: 0;
+  background-color: #ED6A5A;
+  -webkit-transform: rotate(-10deg) translateX(30%) translateY(-10%);
+          transform: rotate(-10deg) translateX(30%) translateY(-10%);
+}
+
+header nav div {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 0%;
+  width: 0%;
+}
+
+header nav ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(-50%, -90%) rotate(10deg);
+          transform: translate(-50%, -90%) rotate(10deg);
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 2em 0;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1.6em;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 0.2em;
+}
+
+header nav.hide {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(45deg) translateX(80%) translateY(0%);
+          transform: rotate(45deg) translateX(80%) translateY(0%);
+}
+
+header nav.hide div {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+main div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main h1 {
+  font-size: 3em;
+  color: #ED6A5A;
+}
+
+main span.title span {
+  -webkit-animation: test 2s infinite;
+          animation: test 2s infinite;
+}
+
+main p {
+  color: white;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+}
+
+section.decor-container {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #232020;
+}
+
+section.decor-container div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+section.decor-container div:nth-child(1) {
+  background-color: lime;
+  top: 10%;
+  left: 10%;
+  -webkit-box-shadow: 0px 0px 40px 0px lime;
+          box-shadow: 0px 0px 40px 0px lime;
+}
+
+section.decor-container div:nth-child(2) {
+  background-color: lightcoral;
+  top: 70%;
+  left: 40%;
+  -webkit-box-shadow: 0px 0px 40px 0px lightcoral;
+          box-shadow: 0px 0px 40px 0px lightcoral;
+}
+
+section.decor-container div:nth-child(3) {
+  background-color: lightskyblue;
+  top: 35%;
+  left: 87%;
+  -webkit-box-shadow: 0px 0px 40px 0px lightskyblue;
+          box-shadow: 0px 0px 40px 0px lightskyblue;
+}
+
+section.decor-container div:nth-child(4) {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 20%;
+  left: 90%;
+  background-color: yellow;
+  -webkit-box-shadow: 0px 0px 40px 0px yellow;
+          box-shadow: 0px 0px 40px 0px yellow;
+}
+
+section.decor-container div:nth-child(5) {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 40%;
+  left: 20%;
+  background-color: turquoise;
+  -webkit-box-shadow: 0px 0px 40px 0px turquoise;
+          box-shadow: 0px 0px 40px 0px turquoise;
+}
+
+footer {
+  background-color: #232020;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  height: 10vh;
+  width: 100%;
+  padding: 0 1em;
+  border-top: 0.1em solid white;
+}
+
+footer p {
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@-webkit-keyframes test {
+  0% {
+    color: #ED6A5A;
+    opacity: 0.4;
+  }
+  50% {
+    color: #ED6A5A;
+    opacity: 1;
+  }
+  100% {
+    color: #ED6A5A;
+    opacity: 0.4;
+  }
+}
+
+@keyframes test {
+  0% {
+    color: #ED6A5A;
+    opacity: 0.4;
+  }
+  50% {
+    color: #ED6A5A;
+    opacity: 1;
+  }
+  100% {
+    color: #ED6A5A;
+    opacity: 0.4;
+  }
+}
+/*# sourceMappingURL=style.css.map */
